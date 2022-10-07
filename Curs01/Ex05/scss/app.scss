@@ -1,8 +1,24 @@
+$color-red: red;
+$color-purple: purple;
+$color-green: green;
+$color-magenta: magenta;
+$color-lightcoral: lightcoral;
+$color-pink: pink;
+
 ul {
   a {
+    text-decoration: none;
+
     &:hover {
-      color: red;
-      text-decoration: none;
+      color: $color-red;
+    }
+
+    &:active {
+      color: $color-purple;
+    }
+
+    &:visited {
+      color: $color-green;
     }
   }
 }
@@ -29,5 +45,21 @@ ul {
 a {
   .all-visited & {
     text-decoration: line-through;
+  }
+}
+
+ol {
+  a {
+    &:hover {
+      color: $color-magenta;
+    }
+
+    &:active {
+      color: $color-pink;
+    }
+
+    &:visited {
+      color: $color-lightcoral;
+    }
   }
 }
