@@ -9,11 +9,11 @@ body {
 
 @keyframes blink {
   from {
-    opacity: 1;
+    color: black;
   }
 
   to {
-    opacity: 0;
+    color: white;
   }
 }
 
@@ -25,17 +25,18 @@ body {
 
 @keyframes bounce {
   from {
-    transform: translateY(0);
+    transform: translateX(0);
   }
 
   to {
-    transform: translateY(-16px);
+    transform: translateX(-16px);
   }
 }
 
 .loader-dots {
   display: flex;
   gap: 8px;
+  flex-direction: column;
 }
 
 .loader-dots .box {
